@@ -1,16 +1,10 @@
-# This is a sample Python script.
+import numpy as np
+import time
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+start = time.time()
+arr = np.random.rand(10 ** 6)
+end = time.time()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f"Method: np.random.rand")
+print(f"Array size: {len(arr)}")
+print(f"Time: {end - start:.6f} seconds")
