@@ -22,7 +22,7 @@ def main():
     Week13().run()
 
     print("\n--- Week 14 ---")
-    print("Run `python week14.py` and open http://127.0.0.1:5000/timings")
+    print("Run `python week14.py` and open http://127.0.0.1:8000/timings")
 
 
 if __name__ == "__main__":
