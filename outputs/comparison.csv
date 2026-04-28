@@ -1,0 +1,3 @@
+method,seconds
+np.random.rand,0.0030901432037353516
+default_rng().random,0.004369258880615234

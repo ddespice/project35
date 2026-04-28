@@ -1,30 +1,29 @@
-import numpy as np
-import time
+from week9 import Week9
+from week10 import Week10
+from week11 import Week11
+from week12 import Week12
+from week13 import Week13
 
 
-class Week9:
-    def run(self):
-        start = time.time()
-        arr = np.random.rand(10**6)
-        end = time.time()
-        self.time_old = end - start
-        print(f"Method: np.random.rand")
-        print(f"Time: {self.time_old:.6f} seconds")
-
-
-class Week10:
-    def run(self):
-        start = time.time()
-        arr = np.random.default_rng().random(10**6)
-        end = time.time()
-        self.time_new = end - start
-        print(f"Method: default_rng().random")
-        print(f"Time: {self.time_new:.6f} seconds")
-
-
-if __name__ == '__main__':
+def main():
     print("--- Week 9 ---")
     Week9().run()
 
     print("\n--- Week 10 ---")
     Week10().run()
+
+    print("\n--- Week 11 ---")
+    Week11().run()
+
+    print("\n--- Week 12 ---")
+    Week12().run()
+
+    print("\n--- Week 13 ---")
+    Week13().run()
+
+    print("\n--- Week 14 ---")
+    print("Run `python week14.py` and open http://127.0.0.1:5000/timings")
+
+
+if __name__ == "__main__":
+    main()
